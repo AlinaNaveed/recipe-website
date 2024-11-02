@@ -1,0 +1,193 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(201, 201, 201);
+    /*background-image: url(download.jpeg);
+    object-fit: cover;
+    background-repeat: no-repeat;*/
+}
+
+nav {
+    background-color: rgb(34, 34, 34);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+.channel {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+i {
+    height: 50px;
+    width: 50px;
+}
+
+i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.channel:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}*/
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#search-input {
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#search-button {
+    background-color: #fafafa;
+    color: rgb(5, 5, 5);
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #333;
+}
+.yt-box {
+    margin-right: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.content {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(214, 212, 212);
+    text-align: center;
+    width: 400px;
+    height: 280px;
+    margin: 20px;
+    border: 1px solid #b69d9d;
+    overflow: hidden;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0%;
+    margin: 0%;
+}
+.image{
+    background-image: url(OIP.jpeg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 700px;
+    width: 100vw;
+    animation-name: demo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+  }
+  @keyframes demo {
+    0% {
+        background-image: url(OIP.jpeg);
+      }
+      3333.33% {
+        background-image: url(download.jpeg);
+      }
+      33.33% {
+        background-image: url(OIP\ \(1\).jpeg);
+      }
+      50% {
+        background-image: url(OIP\ \(2\).jpeg);
+      }
+      /*66.67% {
+        background-image: url(image5.jpeg);
+      }
+      83.33% {
+        background-image: url(image6.jpeg);
+      }*/
+      100% {
+        background-image: url(OIP.jpeg); /* restarts animation */
+      }
+    }
+    
+
+  .heading{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  button{
+    background-color: #000000;
+    color:white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .recipe{
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 80%;
+    height: 80%;
+    overflow-y: auto;
+  }
+  
+  .recipe.show {
+    display: block; 
+  }
+  
+  
